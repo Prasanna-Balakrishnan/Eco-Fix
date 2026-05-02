@@ -1,10 +1,14 @@
   // Bubble Effect
   const bubbleContainer = document.querySelector('.bubbles');
   if (bubbleContainer) {
-    for(let i=0;i<75;i++){
+    for (let i = 0; i < 75; i++) {
       const span = document.createElement('span');
-      span.style.setProperty('--i', Math.random()*20+5);
-      span.style.setProperty('--x', Math.random());
+      const duration = Math.random() * 15 + 8;          // 8s – 23s
+      const size = Math.floor(Math.random() * 40 + 10); // 10px – 50px
+      span.style.setProperty('--i',     duration);
+      span.style.setProperty('--x',     Math.random());
+      span.style.setProperty('--size',  size + 'px');
+      span.style.setProperty('--delay', -(Math.random() * duration)); // negative delay = already mid-animation
       bubbleContainer.appendChild(span);
     }
   }
