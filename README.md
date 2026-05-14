@@ -28,7 +28,7 @@ Docker · Docker Compose
 
 ## 🚀 Getting Started
 
-### ✅ Prerequisites
+### Prerequisites
 
 - Node.js (v14 or newer recommended)
 - Docker and Docker Compose (optional)
